@@ -1,0 +1,161 @@
+:root{
+  --green:#0b6b3a;
+  --green-dark:#074f2c;
+  --white:#ffffff;
+  --black:#000000;
+  --gray:#f2f2f2;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body,html{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:var(--white)}
+
+.hiperlink {
+    color: #626060; /* Define a cor do link como branca (pode ser 'white' ou '#fff') */
+    font-size: inherit; /* Faz o tamanho da fonte herdar o tamanho do elemento pai (<p>) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links (opcional) */
+}
+
+/* Header */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:80;transition:background .25s,box-shadow .25s;padding:12px 20px}
+.site-header .header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto}
+.site-header.transparent{background:transparent}
+.site-header.scrolled{background:var(--green-dark);box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.logo img{height:40px;display:block;filter:brightness(0) invert(1)}
+.site-header.scrolled .logo img{filter:none}
+
+.nav{flex:1;margin:0 20px;font-size: 18px;}
+.menu{list-style:none;display:flex;gap:21px;justify-content:center;align-items:center;margin:0;padding:0}
+li a:hover{color: #585b57e9}
+.menu a, .menu button{color:rgba(241, 231, 231, 0.95);text-decoration:none;background:none;border:none;font:inherit;cursor:pointer}
+.menu li{position:relative}
+.has-sub .submenu{position:absolute;left:0;top:100%;background:var(--white);border:1px solid #ddd;display:none;min-width:210px;padding:8px 0}
+.has-sub:hover .submenu,.has-sub.show .submenu{display:block}
+.submenu li{padding:6px 12px;list-style-type: none;}
+.submenu a{color:rgba(138, 130, 130, 0.95)}
+
+.header-right{display:flex;align-items:center;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:6px;background:var(--green);color:var(--white);text-decoration:none}
+.btn.small{padding:8px 12px;font-size:0.9rem}
+.btn.hire{background:var(--green)}
+
+.hamburger{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:rgba(235, 227, 227, 0.99)}
+#contrateme:hover{color: #c7cac6a8}
+
+/* Mobile menu */
+.mobile-menu{position:fixed;inset:0;background:var(--white);z-index:90;display:none;overflow:auto;padding:40px}
+.mobile-menu.open{display:block}
+.mobile-close{position:absolute;top:18px;right:18px;background:none;border:none;font-size:28px}
+.mobile-menu-list{list-style:none;padding:60px 10px 20px;margin:0;display:flex;flex-direction:column;gap:14px}
+.mobile-menu-list a{color:var(--black);text-decoration:none;font-size:1.2rem}
+.mobile-submenu{list-style:none;padding-left:12px;margin-top:8px;display:none}
+.has-sub-mobile .sub-mobile-toggle{background:none;border:none;padding:8px;font:inherit}
+.has-sub-mobile.open .mobile-submenu{display:block}
+
+/* Hero */
+.hero{background-size:cover;background-position:center;color:var(--white);min-height:500px;max-height:900px;padding-top:100px;display:flex;align-items:center;opacity: 0.98;}
+.hero-content{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:40px;width:100%}
+.hero-text{max-width:800px}
+.hero-text h1{font-size:2.7rem;margin:0 0 12px;}
+.hero-text span{display:block;margin-bottom:12px;font-size:1.5rem}
+.hero-text p{font-size:1.1rem}
+.profile-img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.15)}
+
+/* Sections */
+.section{padding:60px 20px}
+.white-section{background:var(--white)}
+.gray-section{background:var(--gray)}
+.container{max-width:1200px;margin:0 auto}
+
+.about{display:flex;gap:30px;align-items:center}
+.about-photo{width:320px;border-radius:12px;object-fit:cover}
+.about-text h2{color:#333;margin-top:0}
+.about-text p{color:#666}
+.about-text hr{border:0;height:4px;background:var(--green-dark);margin:18px 0}
+.socials{display:flex;gap:12px;margin:12px 0}
+.socials a{color:var(--green-dark);text-decoration:none}
+.centered{display:flex;justify-content:center;margin-top:18px}
+
+.section-title{text-align:center;margin:20px 0;color:#000}
+.cards{display:flex;gap:24px;max-width:1200px;margin:0 auto;padding:0 20px}
+.card{background:var(--white);border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.08);overflow:hidden;flex:1;display:flex;flex-direction:column}
+.card img{width:100%;height:180px;object-fit:cover}
+.card h3{margin:12px}
+.card p{margin:0 12px 12px;color:#555}
+.card .btn{margin:12px;width:fit-content}
+
+.skills{display:flex;gap:20px;max-width:1200px;margin:0 auto;align-items:center-start}
+.skills-col{flex:1}
+.skills ul{list-style:none;padding:0;margin:0}
+.skills li{margin-bottom:16px;color:#333}
+.years{float:right;color:#333}
+.progress{background:#e6e6e6;height:12px;border-radius:8px;overflow:hidden;margin-top:6px}
+.progress .bar{height:100%;background:var(--green-dark)}
+.divider{width:1px;background:#ddd}
+
+.clients{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap}
+.clients img{width:140px;height:140px;border-radius:50%;object-fit:cover}
+#clientes p {text-align: center;color: #6b6666;margin-bottom: 60px;}
+#clientes{margin-left: auto; margin-right: auto; max-width: 1200px;}
+
+/* Formulário de contato */
+.contact-wrap{max-width:1100px;margin:0 auto}
+.contact-form{background:var(--white);padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.contact-form .row{display:flex;gap:12px}
+.contact-form label{display:block;width:100%;margin-bottom:8px;color:#333}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px}
+.form-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:8px}
+.form-message{margin-top:12px;padding:10px;border-radius:6px;display:none}
+.form-message.show{display:block;background:var(--green);color:var(--white)}
+
+label {display:block; margin-top:12px; font-weight:600; }
+input[type="text"], input[type="email"], textarea { width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; font-size:14px; }
+textarea {min-height:120px; resize:vertical; }
+.row {margin-top:12px; }
+.errors{color:#c0392b; font-size:13px; margin-top:6px; display:none; }
+.buttons{margin-top:16px; display:flex; gap:10px }
+button{padding:10px 16px; border-radius:6px; border:none; cursor:pointer; font-weight:600; }
+button[type="button"] { background:#e0e0e0; color:#111; }
+button[type="submit"] { background:#165c2e; color:#fff; }
+.success{ margin-top:14px; color:#0a7a2a; font-weight:600; display:none; }
+
+.contact-info{padding:40px 20px;text-align:center}
+.logo-green{color:var(--green);margin:0}
+
+.map-section{padding:0}
+
+.site-footer{background:var(--green-dark);color:var(--white);padding:20px}
+.site-footer .footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.socials-footer a{color:var(--white);margin-left:12px;text-decoration:none}
+.footer-inner a {
+    color: #ffffff;      /* Define a cor do link como branca (pode ser 'white' ou '#fff') */
+    font-size: inherit;  /* Faz o tamanho da fonte herdar o tamanho do elemento pai (<p>) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links (opcional) */
+}
+
+.to-top{position:fixed;right:18px;bottom:18px;background:var(--green);color:var(--white);border:none;padding:12px 16px;border-radius:50%;display:none;z-index:100;cursor:pointer;font-size:21px}
+.to-top.show{display:block}
+
+/* Contrate-me */
+.hire-photo{width:320px;height:320px;border-radius:12px;object-fit:cover}
+
+/* Responsive */
+@media(max-width:992px){
+  .menu{display:none}
+  .hamburger{display:inline-block}
+  .hero-content{flex-direction:column-reverse;align-items:center;text-align:center;padding:24px}
+  .hero-text h1{font-size:1.8rem}
+  .profile-img{width:140px;height:140px;margin-bottom:16px}
+  .about{flex-direction:column;text-align:center}
+  .about-photo{width:60%;max-width:320px}
+  .cards{flex-direction:column}
+  .skills{flex-direction:column}
+  .divider{display:none}
+  .contact-form .row{flex-direction:column}
+  .form-actions{justify-content:center}
+  .clients{flex-direction:column}
+}
+
+@media(min-width:993px){
+  .mobile-menu{display:none}
+}
