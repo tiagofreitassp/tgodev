@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     mobileMenu.setAttribute('aria-hidden','false');
     document.body.style.overflow = 'hidden';
   }
+  
   function closeMobile(){
     mobileMenu.classList.remove('open');
     mobileMenu.setAttribute('aria-hidden','true');
