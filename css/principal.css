@@ -62,7 +62,7 @@ li a:hover{color: #585b57e9}
 .profile-img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.15)}
 
 /* Sections */
-.section{padding:60px 20px}
+.section{padding:60px 60px}
 .white-section{background:var(--white)}
 .gray-section{background:var(--gray)}
 .container{max-width:1200px;margin:0 auto}
