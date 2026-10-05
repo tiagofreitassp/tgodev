@@ -12,3 +12,7 @@ O site www.tgodev.com.br é um portal profissional criado para apresentar os ser
 - LinkedIn: https://www.linkedin.com/in/tiago-lopes-de-freitas-49a463240/
 - GitHub: https://github.com/tiagofreitassp
 - Facebook: https://www.facebook.com/tiago.freitas.114935
+
+## Observação
+
+Caso o site esteja fora dor ar, você pode baixar o código fonte e abri-lo em qualquer navegador sem precisar de servidores como o Xampp e Wamp.
