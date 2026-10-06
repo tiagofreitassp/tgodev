@@ -1,5 +1,5 @@
 
-# TGODev — tgodev.com.br
+# TGO Dev — tgodev.com.br
 
 Este repositório contem as páginas web de meu perfil profissional e portfólio de minha carreira com Tecnologia.
 
@@ -15,4 +15,4 @@ O site www.tgodev.com.br é um portal profissional criado para apresentar os ser
 
 ## Observação
 
-Caso o site esteja fora dor ar, você pode baixar o código fonte e abri-lo em qualquer navegador sem precisar de servidores como o Xampp e Wamp.
+Caso o site esteja fora dor ar, você pode baixar o código fonte e abri-lo em qualquer navegador sem precisar de servidores como o Xampp e o Wamp.
