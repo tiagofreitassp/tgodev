@@ -154,6 +154,7 @@ button[type="submit"] { background:#165c2e; color:#fff; }
   .contact-form .row{flex-direction:column}
   .form-actions{justify-content:center}
   .clients{flex-direction:column}
+  .socials{justify-content:center}
 }
 
 @media(min-width:993px){

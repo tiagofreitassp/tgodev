@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /prompts/
+Disallow: /.vscode/
+
+Sitemap: https://tgodev.com.br/sitemap.xml
